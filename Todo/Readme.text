@@ -1,0 +1,25 @@
+There are 3 Folders in this  git Repo
+
+1.Html-into  pdf------first folder It contain html file to pdf format 
+
+npm Packages
+*.npm i ejs
+*.npm i bodyParser
+*.npm i html-pdf
+
+----------------------------------------------------------------------------------
+
+2.ReactTodo----it contains Todo Application like Edit and Delete with postgresSQl database
+------------------------------------------------------------------------------------------
+
+3.Todo--Backend Curd --Application with postgresSQl with connectd ReactTodo App
+
+Routes using Todo_Backend
+
+//ROUTES
+
+//create todo 
+//get all todo
+//get a todo
+//upadte todo
+//delete todo

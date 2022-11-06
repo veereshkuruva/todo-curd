@@ -3,12 +3,12 @@ const app = express()
 const port = 3000
 const cors =require("cors")
 const pool =require('./db')
-const fs =require("fs")
-
+const pdf =require("html-pdf");
 
 //middlewares
 app.use(cors())
 app.use(express.json())
+
 
 //ROUTES
 
@@ -72,7 +72,6 @@ app.put("/update/:id",async(req,res)=>{
 
     }
 
-  
 })
 
 //delete todo
@@ -89,16 +88,11 @@ app.delete("/delete/:id",async(req,res)=>{
 
     }
 
-  
-})
-
-
-
-
+});
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
-})
+});
 
 
 //nodemon index --start the server
